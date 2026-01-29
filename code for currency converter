@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class CurrencyConverter {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter base currency rate: ");
+        double baseRate = sc.nextDouble();
+
+        System.out.print("Enter target currency rate: ");
+        double targetRate = sc.nextDouble();
+
+        System.out.print("Enter amount: ");
+        double amount = sc.nextDouble();
+
+        double result = (targetRate / baseRate) * amount;
+
+        System.out.println("Converted amount: " + result);
+    }
+}
